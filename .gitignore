@@ -1,0 +1,4 @@
+# Ignore firebase file
+**/base.js
+node_modules
+public
