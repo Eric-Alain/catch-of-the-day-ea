@@ -31,8 +31,8 @@
     "styles:watch": "npm run styles -- -w"
   },
   "engines": {
-    "npm": ">=8.13.2",
-    "node": ">=18.5.0"
+    "npm": "^8.13.2",
+    "node": "^18.0.0"
   },
   "browserslist": [
     ">0.2%",
