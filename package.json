@@ -30,6 +30,15 @@
     "now-build": "npm run --openssl-legacy-provider build && mv build dist",
     "styles:watch": "npm run styles -- -w"
   },
+  "overrides": {
+    "@now/static-build": "https://registry.npmjs.org/@vercel/static-build/-/static-build-1.0.5.tgz",
+    "ansi-html": "https://registry.npmjs.org/ansi-html-community/-/ansi-html-community-0.0.8.tgz",
+    "ansi-regex": "^5.0.1",
+    "browserslist": "^4.19.3",
+    "immer": "^9.0.12",   
+    "nth-check": "^2.0.1",
+    "ws": "^8.5.0"
+  },
   "browserslist": [
     ">0.2%",
     "not ie <= 11",
