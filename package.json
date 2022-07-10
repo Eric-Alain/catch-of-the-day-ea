@@ -27,8 +27,12 @@
     "build": "react-scripts --openssl-legacy-provider build",
     "eject": "react-scripts eject",
     "styles": "stylus -u autoprefixer-stylus ./src/css/style.styl -o ./src/css/style.css",
-    "now-build": "npm run build && mv build dist",
+    "now-build": "npm run --openssl-legacy-provider build && mv build dist",
     "styles:watch": "npm run styles -- -w"
+  },
+  "engines": {
+    "npm": ">=8.13.2",
+    "node": ">=18.5.0"
   },
   "browserslist": [
     ">0.2%",
