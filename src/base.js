@@ -1,12 +1,20 @@
-import Rebase from "re-base";
+import * as dotenv from 'dotenv';
+dotenv.config();
+
+const apiKey = process.env.REACT_APP_API_KEY;
+const authDomain = process.env.REACT_APP_AUTH_DOMAIN;
+const databaseURL = process.env.REACT_APP_DATABASE_URL;
+const projectId = process.env.REACT_APP_PROJECT_ID;
+
+import Rebase from 're-base';
 import firebase from 'firebase/app';
 import 'firebase/database';
 
 const firebaseApp = firebase.initializeApp({
-  apiKey: 'AIzaSyB4QLkvbyJin3UqkvAhNor1VpVAOVF32H8',
-  authDomain: 'catch-of-the-day-ea.firebaseapp.com',
-  databaseURL: 'https://catch-of-the-day-ea-default-rtdb.firebaseio.com',
-  projectId: 'catch-of-the-day-ea'
+  apiKey: apiKey,
+  authDomain: authDomain,
+  databaseURL: databaseURL,
+  projectId: projectId
 });
 
 const base = Rebase.createClass(firebaseApp.database());
