@@ -24,10 +24,10 @@
     "dev": "react-scripts --openssl-legacy-provider start",
     "start": "serve --single ./build",
     "watch": "concurrently --names \"webpack, stylus\" --prefix name \"npm run start\" \"npm run styles:watch\"",
-    "build": "react-scripts build", 
+    "build": "react-scripts --openssl-legacy-provider build", 
     "eject": "react-scripts eject",
     "styles": "stylus -u autoprefixer-stylus ./src/css/style.styl -o ./src/css/style.css",
-    "now-build": "npm run build && mv build dist",
+    "now-build": "npm run --openssl-legacy-provider build && mv build dist",
     "styles:watch": "npm run styles -- -w"
   },
   "browserslist": [
